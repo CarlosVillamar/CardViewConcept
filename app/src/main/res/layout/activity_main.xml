@@ -23,7 +23,8 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:background="@color/backgroundCard" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
