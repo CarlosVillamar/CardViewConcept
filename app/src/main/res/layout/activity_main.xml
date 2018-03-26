@@ -17,22 +17,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.materialme.MainActivity">
+    tools:context="com.example.android.CardViewConcept.MainActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:background="@color/backgroundCard" />
+        android:background="@color/backgroundCard"
+        android:scrollbars="vertical" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end|right"
         android:layout_margin="@dimen/activity_horizontal_margin"
+        android:onClick="reset"
         android:src="@drawable/ic_reset"
-        android:tint="@android:color/white"
-        android:onClick="reset"/>
+        android:tint="@android:color/white" />
 
 </FrameLayout>

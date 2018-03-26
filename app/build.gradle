@@ -5,6 +5,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
+        applicationId "com.example.android.CardViewConcept"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1

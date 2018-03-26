@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carlos\'Project</string>
+    <string name="news_placeholder">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+
+    <string-array name="topic_titles">
+        <item>FC Barcelona</item>
+        <item>Star Wars</item>
+        <item>Overwatch</item>
+        <item>Android Development</item>
+        <item>Smartphones</item>
+        <item>Powerlifting</item>
+    </string-array>
+
+    <string-array name="topic_info">
+        <item>MAS QUE UN CLUB</item>
+        <item>Search your feelings, you it to be true, your feeling betray you</item>
+        <item>Vamos a jugar OVERWATCH</item>
+        <item>Here is some Android Development news!</item>
+        <item>Here is some news on the latests Smartphones</item>
+        <item>Here is your guide to get started in powerlifting</item>
+
+    </string-array>
+
+    <array name="Card_Images">
+        <item>@drawable/fcbarcelona</item>
+        <item>@drawable/starwars</item>
+        <item>@drawable/overwatch</item>
+        <item>@drawable/androidappbanner</item>
+        <item>@drawable/smartphones</item>
+        <item>@drawable/weightlifting</item>
+    </array>
+
+</resources>

@@ -20,6 +20,7 @@
 
     <string-array name="topic_titles">
         <item>FC Barcelona</item>
+        <item>Star Wars</item>
         <item>Overwatch</item>
         <item>Android Development</item>
         <item>Smartphones</item>
@@ -27,7 +28,8 @@
     </string-array>
 
     <string-array name="topic_info">
-        <item>Here is some FC Barcelona  news!</item>
+        <item>Here is some FC Barcelona  news!ijhkjhdskjhsdjkhfkjdhsakfjhakfhahfkashkfhkahkhfjkhkjkbcmbmnnmbvhshfkjhsdjshfjkhfhuyuihishk</item>
+        <item>Search your feelings, you it to be true, your feeling betray you</item>
         <item>Here is some Overwatch news!</item>
         <item>Here is some Android Development news!</item>
         <item>Here is some news on the latests Smartphones</item>
@@ -37,6 +39,7 @@
 
     <array name="Card_Images">
         <item>@drawable/fcbarcelona</item>
+        <item>@drawable/starwars</item>
         <item>@drawable/overwatch</item>
         <item>@drawable/androidappbanner</item>
         <item>@drawable/smartphones</item>

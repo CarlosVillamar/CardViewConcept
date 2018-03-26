@@ -23,4 +23,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TopicDetailTitle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+    <style name="TopicDetailText" parent="TextAppearance.AppCompat.Subhead" />
+
+    <style name="TopicTitle" parent="TextAppearance.AppCompat.Headline" />
+
+
 </resources>
