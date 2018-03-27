@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.google.apis:google-api-services-searchconsole:v1-rev309-1.23.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-searchconsole/v1-rev309-1.23.0/b9225ca3bd3921d136f815bb5ebbfbcd8eee24ce/google-api-services-searchconsole-v1-rev309-1.23.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-searchconsole/v1-rev309-1.23.0/f6a28923482e7fdb62afc07e9d9bf9e63fd1c77b/google-api-services-searchconsole-v1-rev309-1.23.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

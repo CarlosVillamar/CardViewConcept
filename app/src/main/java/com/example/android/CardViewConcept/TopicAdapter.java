@@ -122,6 +122,7 @@ class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.ViewHolder> {
         private Topic mcurrentTopic;
         private GradientDrawable mGradientDrawable;
 
+
         /**
          * Constructor for the ViewHolder, used in onCreateViewHolder().
          *
@@ -160,9 +161,10 @@ class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.ViewHolder> {
         public void onClick(View v) {
             //add in intent
             Intent detailIntent = Topic.Starter(mContext, mcurrentTopic.getTitle(), mcurrentTopic.getImageRes());
-
+            //Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("www.google.com"));
             //start the activity
             mContext.startActivity(detailIntent);
+            // mContext.startActivity(intent);
 
             //Get object for each item clicked using getAdapterPosition
             mcurrentTopic = mTopicData.get(getAdapterPosition());

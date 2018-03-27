@@ -25,13 +25,15 @@ import android.support.annotation.DrawableRes;
  */
 class Topic {
 
+    //Member variables representing the title and information about the sport
     static final String TITLE_KEY = "Title";
     static final String IMAGE_KEY = "Image Resource";
-    //Member variables representing the title and information about the sport
+    static final String KEY = "meh";
+    //without the image keys Detail Activity would have nothing to reference to causing an error
+
     private final String title;
     private final String info;
     private final int imageRes;
-    //without the image keys Detail Activity would have nothing to reference to causing an error
 
     public Topic(String title, String info, int imageRes) {
 
@@ -39,14 +41,17 @@ class Topic {
         this.info = info;
         this.imageRes = imageRes;
 
+
     }
 
     static Intent Starter(Context context, String title, @DrawableRes int getImageRes) {
-        Intent intent = new Intent(context, DetailActivity.class);
+        Intent intent = new Intent(context, googleSearch2.class);
+        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
         //intent.putExtra("title", title);
         //intent.putExtra("imageResource", getImageRes);
         intent.putExtra(TITLE_KEY, title);
         intent.putExtra(IMAGE_KEY, getImageRes);
+
         return intent;
     }
 
@@ -71,5 +76,6 @@ class Topic {
     int getImageRes() {
         return imageRes;
     }
+
 
 }
