@@ -27,10 +27,14 @@ import java.net.URL;
  */
 
 public class googleSearch2 extends Activity {
+    /*
+    This class requires use of google's custom search API
 
+    The onCreate method borrows some properties from the detail activity class
 
-    // String searchUrl = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=";
-    //String searchQuery = searchUrl + searchItem;
+    This class uses some concepts from a project found here
+    https://github.com/fanysoft/Android_Google_Custom_SearchDemo
+    */
 
 
     private static final String TAG = "searchApp";
@@ -42,18 +46,22 @@ public class googleSearch2 extends Activity {
     Integer responseCode = null;
     String responseMessage = "";
 
+
+    //Search Subject
+    //TODO find a way to referecne the other card titles
     String eText = "Fc Barcelona";
 
+
+    //this string will help transition tha search subject into the URL when the time comes
     String searchStringNoSpaces = eText.replace(" ", "+");
 
-    // Your API key
-    // TODO replace with your value
+    //Your API key
     String key = "AIzaSyBAysEcS4hd7ziphINYGWfzoF2-FA17aCA";
 
-    // Your Search Engine ID
-    // TODO replace with your value
+    //Search Engine ID
     String cx = "005291217035565736318:teonhxgvluu";
 
+    //Build a Url using your own custom search url plus the strings we already initialized
     String urlString = "https://cse.google.com:443/cse/publicurl?&key=" + key + "&cx=" + cx + "&q=" + searchStringNoSpaces;
 
 
@@ -62,11 +70,15 @@ public class googleSearch2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        Log.d(TAG, "**** APP START ****");
+
+
+        //reference views in layout_search
         title = findViewById(R.id.titleSearch);
         News = findViewById(R.id.newsTitleSearch);
         iv = findViewById(R.id.TopicImagesSearch);
 
-
+        //reference to webview
         results = findViewById(R.id.subtitleSearch);
 
 
@@ -89,14 +101,12 @@ public class googleSearch2 extends Activity {
                 .into(iv);
 
 
-        Log.d(TAG, "**** APP START ****");
-
 
         final String searchString = eText;
         Log.d(TAG, "Searching for : " + searchString);
-        //results.getUrl();
         title.setText("Searching for : " + searchString);
 
+        //makes sure we validate our URL in a try and catch
         URL url = null;
         try {
             url = new URL(urlString);
@@ -187,7 +197,7 @@ public class googleSearch2 extends Activity {
             // show result
             // results.getUrl();
 
-            News.setText("meh");
+            News.setText("Learn more about:");
             //results.loadData(urlString,null,null);
             results.loadUrl(urlString);
 

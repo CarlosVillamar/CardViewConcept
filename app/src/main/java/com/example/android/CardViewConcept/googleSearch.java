@@ -23,15 +23,23 @@ import java.net.URL;
  */
 
 public class googleSearch extends Activity {
+/*
+This class was used to test the google custom search API and returned a string value but all it did
+was return everything in HTML. This lead to creating a new layout file with a webview as opposed to
+having a second or third text view to load  the url in.
 
+This class requires use of google's custom search API
+
+This class uses some concepts from a project found here
+https://github.com/fanysoft/Android_Google_Custom_SearchDemo
+*/
 
     String eText = Topic.TITLE_KEY;
 
     final String searchString = eText;
 
-    // String searchUrl = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=";
     String searchItem = searchString;
-    //String searchQuery = searchUrl + searchItem;
+
 
     String searchStringNoSpaces = searchString.replace(" ", "+");
 
@@ -43,7 +51,7 @@ public class googleSearch extends Activity {
     // TODO replace with your value
     String cx = "005291217035565736318:teonhxgvluu";
 
-    String urlString = "https://cse.google.com:443/cse/publicurl?cx=005291217035565736318:teonhxgvluu" + searchStringNoSpaces + "&key=" + key + "&cx=" + cx + "&alt=json";
+    String urlString = "https://cse.google.com:443/cse/publicurl?" + searchStringNoSpaces + "&key=" + key + "&cx=" + cx + "&alt=json";
 
     TextView results;
     String searchResult;
